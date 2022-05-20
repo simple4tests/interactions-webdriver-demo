@@ -24,6 +24,7 @@ public class GoogleFirefoxTests {
     @BeforeEach
     public void before() {
         FirefoxOptions firefoxOptions = new FirefoxOptions();
+        firefoxOptions.setBinary("C:/Program Files/Mozilla Firefox/firefox.exe");
         firefoxOptions.setCapability("marionette", true);
         firefoxOptions.setCapability("unexpectedAlertBehaviour", "ignore");
         System.setProperty("webdriver.gecko.driver", "c:/dev_tools/selenium/geckodriver.exe");

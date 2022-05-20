@@ -25,8 +25,8 @@ public class TheLabChromeTests {
     public void before() {
         System.setProperty("webdriver.chrome.driver", "c:/dev_tools/selenium/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(50));
+        driver.manage().window().maximize();
     }
 
     @AfterEach

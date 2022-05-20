@@ -19,7 +19,7 @@ public class TheLabChromeTests {
     public static final By GAME_OVER = By.xpath("//*[text()='Game Over!']");
     public static final By KITTENS = By.xpath("//img[@alt='Cat']");
 
-    private WebDriver driver;
+    public WebDriver driver;
 
     @BeforeEach
     public void before() {

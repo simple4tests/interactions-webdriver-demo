@@ -14,12 +14,12 @@ import java.time.Duration;
 
 public class GoogleFirefoxTests {
 
-    private final By ACCEPT = By.id("L2AGLb");
-    private final By SEARCH_CRITERIA = By.xpath("//input[@name='q']");
-    private final By TOTO_UNIVERSAL_MUSIC = By.xpath("//h3[normalize-space(.)='Toto - Universal Music France']");
-    private final By TOTO = By.xpath("//a[contains(.,'Toto')]");
+    public static final By ACCEPT = By.id("L2AGLb");
+    public static final By SEARCH_CRITERIA = By.xpath("//input[@name='q']");
+    public static final By TOTO_UNIVERSAL_MUSIC = By.xpath("//h3[normalize-space(.)='Toto - Universal Music France']");
+    public static final By TOTO = By.xpath("//a[contains(.,'Toto')]");
 
-    private WebDriver driver;
+    public WebDriver driver;
 
     @BeforeEach
     public void before() {

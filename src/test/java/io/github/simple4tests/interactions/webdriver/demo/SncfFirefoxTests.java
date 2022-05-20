@@ -16,15 +16,15 @@ import java.time.Duration;
 
 public class SncfFirefoxTests {
 
-    private static final By REFUSE_ALL = By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll");
-    private static final By DEPARTURE = By.id("departure-place");
-    private static final By DEPARTURE_OPTION_1 = By.id("react-autocomplete-departure-place-1");
-    private static final By ARRIVAL = By.id("arrival-place");
-    private static final By ARRIVAL_OPTION_1 = By.id("react-autocomplete-arrival-place-1");
-    private static final By SEARCH = By.xpath("//button[@title='Rechercher un itinéraire']");
-    private static final By RESULTS = By.xpath("//section//ul/li");
+    public static final By REFUSE_ALL = By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll");
+    public static final By DEPARTURE = By.id("departure-place");
+    public static final By DEPARTURE_OPTION_1 = By.id("react-autocomplete-departure-place-1");
+    public static final By ARRIVAL = By.id("arrival-place");
+    public static final By ARRIVAL_OPTION_1 = By.id("react-autocomplete-arrival-place-1");
+    public static final By SEARCH = By.xpath("//button[@title='Rechercher un itinéraire']");
+    public static final By RESULTS = By.xpath("//section//ul/li");
 
-    private WebDriver driver;
+    public WebDriver driver;
 
     @BeforeEach
     public void before() {

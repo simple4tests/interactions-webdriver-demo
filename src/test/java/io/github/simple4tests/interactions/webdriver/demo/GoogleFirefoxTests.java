@@ -51,12 +51,12 @@ public class GoogleFirefoxTests {
         driver.findElement(TOTO).click();
     }
 
-    private void waitToBePresent(By element) {
+    private void waitToBePresent(By by) {
         new FluentWait<>(driver)
                 .pollingEvery(Duration.ofMillis(250))
                 .withTimeout(Duration.ofSeconds(10))
                 .ignoring(NoSuchElementException.class)
-                .until(ExpectedConditions.presenceOfElementLocated(element));
+                .until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
     @Test
